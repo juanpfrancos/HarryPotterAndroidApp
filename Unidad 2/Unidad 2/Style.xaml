@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Color x:Key="Primary" >Black</Color>
+    <Color x:Key="Secondary">#D9B64E</Color>
+    <Color x:Key="Placeholder">SlateGray</Color>
+    <Color x:Key="TextForms">White</Color>
+    <Color x:Key="Back">Yellow</Color>
+    <Color x:Key="Aux">#C98474</Color>
+    <Color x:Key="Fondo">#272727 </Color>
+    <Color x:Key="LabelBtn">#D9B64E</Color>
+
+    <Style TargetType="Label" >
+        <Setter Property="FontSize"  Value="Medium"></Setter>
+    </Style>
+    <Style TargetType="Button" >
+        <Setter Property="CornerRadius" Value="10"></Setter>
+    </Style>
+    <Style TargetType="StackLayout">
+        <Setter Property="AbsoluteLayout.MinimumHeightRequest" Value="100"></Setter>
+    </Style>
+    <Style TargetType="ViewCell">
+        <Setter Property="AbsoluteLayout.MinimumHeightRequest" Value="90"></Setter>
+    </Style>
+    <Style TargetType="ListView">
+        <Setter Property="AbsoluteLayout.MinimumHeightRequest" Value="90"></Setter>
+    </Style>
+    <Style x:Key="BtnLogin" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}"></Setter>
+        <Setter Property="Text" Value="Login"></Setter>
+        <Setter Property="TextColor" Value="{StaticResource LabelBtn}"></Setter>
+        <Setter Property="Margin" Value="0 60" ></Setter>
+    </Style>
+    <Style x:Key="BtnSignUp" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}"></Setter>
+        <Setter Property="Text" Value="Sign Up"></Setter>
+        <Setter Property="TextColor" Value="{StaticResource LabelBtn}"></Setter>
+        <Setter Property="Margin" Value="0 60" ></Setter>
+    </Style>
+</ResourceDictionary>
