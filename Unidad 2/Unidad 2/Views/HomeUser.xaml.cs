@@ -17,7 +17,7 @@ namespace Unidad_2.Views
         {
             InitializeComponent();
         }
-        private async void Get_Character(object sender, EventArgs e)
+        private async void Get_Characters(object sender, EventArgs e)
         {
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri("https://hp-api.herokuapp.com/api/characters");
@@ -28,9 +28,9 @@ namespace Unidad_2.Views
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 string content = await response.Content.ReadAsStringAsync();
+                await Application.Current.MainPage.DisplayAlert("All Character", "Now you can show all characters of HP ⚡🏰", "Thanks");
                 var resultado = JsonSerializer.Deserialize<List<HarryPotterModel>>(content);
                 Character.ItemsSource = resultado;
-                await Application.Current.MainPage.DisplayAlert("All Character", "Now you can show all characters of HP ⚡🏰", "Thanks");
             }
         }
     }

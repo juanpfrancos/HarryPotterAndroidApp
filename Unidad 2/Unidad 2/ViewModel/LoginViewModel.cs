@@ -16,7 +16,6 @@ namespace Unidad_2.ViewModel
 
         #region  Propiedades
 
-        //Son las comunicadoras entre el view y viewmodel
         public string UserTxt
         {
             get { return user; }
@@ -33,7 +32,6 @@ namespace Unidad_2.ViewModel
 
         #region  Commands
 
-        //enlazan una accion en la viewmodel con un evento en la vista
         public ICommand LoginCommand
         {
             get
@@ -47,14 +45,13 @@ namespace Unidad_2.ViewModel
 
         #region Methods
 
-        //Aqui viene la logica
         public async void LoginMethod()
         {
             if (string.IsNullOrEmpty(this.user) || string.IsNullOrEmpty(this.password))
             {
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
-                    "Debes diligenciar ambos campos",
+                    "Campos incompletos",
                     "Aceptar");
             }
             else

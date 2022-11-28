@@ -72,24 +72,24 @@ namespace Unidad_2.ViewModel
             {
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
-                    "Debes ingresar un email",
-                    "Aceptar");
+                    "Empty data",
+                    "Ok");
             }
 
             else if (string.IsNullOrEmpty(this.user))
             {
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
-                    "Debes ingresar un usuario",
-                    "Aceptar");
+                    "Cannot be null",
+                    "Ok");
             }
 
             else if (string.IsNullOrEmpty(this.name))
             {
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
-                    "Debes ingresar el nombre completo",
-                    "Aceptar");
+                    "Empty data",
+                    "Ok");
             }
 
             else if (string.IsNullOrEmpty(this.age))
@@ -121,7 +121,7 @@ namespace Unidad_2.ViewModel
 
                     await App.Db.SaveUserModelAsync(user);
 
-                    await Application.Current.MainPage.DisplayAlert("Registrado", "Agregado de manera exitosa", "Aceptar");
+                    await Application.Current.MainPage.DisplayAlert("SignUp", "SignUp Sucessfully", "Ok");
                     await Application.Current.MainPage.Navigation.PushAsync(new Home());
                 }
                 catch (Exception ex)

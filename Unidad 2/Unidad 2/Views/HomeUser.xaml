@@ -2,13 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Unidad_2.Views.HomeUser"
-             Title="Back"
+             Title="LogOut"
              >
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Characters" Clicked="Get_Character"  Style="{StaticResource BtnLogin}"/>
-
-
+            <Button Text="Saga Characters" Clicked="Get_Characters"  Style="{StaticResource BtnLogin}"/>
             <ListView x:Name="Character" VerticalOptions="FillAndExpand" HasUnevenRows="True" SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
