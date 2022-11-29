@@ -1,7 +1,7 @@
-﻿using SQLite;
+﻿using HarryPotter_App.Models;
+using SQLite;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using HarryPotter_App.Models;
 
 namespace HarryPotter_App.DataBase
 {

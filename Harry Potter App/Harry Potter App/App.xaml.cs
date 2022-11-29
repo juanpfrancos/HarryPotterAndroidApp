@@ -1,7 +1,7 @@
-﻿using System;
-using System.IO;
-using HarryPotter_App.DataBase;
+﻿using HarryPotter_App.DataBase;
 using HarryPotter_App.Views;
+using System;
+using System.IO;
 using Xamarin.Forms;
 
 namespace HarryPotter_App

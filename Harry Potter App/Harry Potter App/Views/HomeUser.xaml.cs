@@ -1,9 +1,9 @@
-﻿using System;
+﻿using HarryPotter_App.Models;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Text.Json;
-using HarryPotter_App.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

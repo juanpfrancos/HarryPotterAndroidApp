@@ -1,8 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using System.Collections.Generic;
-using System.Windows.Input;
 using HarryPotter_App.Models;
 using HarryPotter_App.Views;
+using System.Collections.Generic;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace HarryPotter_App.ViewModel
